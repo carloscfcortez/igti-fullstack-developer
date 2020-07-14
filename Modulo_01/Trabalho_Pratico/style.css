@@ -1,10 +1,27 @@
-#content {
+.container {
   display: flex;
   justify-content: center;
-  flex: 1;
-  align-items: center;
 }
 
-/* .col {
-  flex: 1;
-} */
+.col {
+  padding: 1em;
+  vertical-align: middle;
+  align-content: center;
+  display: grid;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  width: 100%;
+}
+
+.square {
+  height: 150px;
+  width: 150px;
+}
+
+h1 {
+  color: rgb(65, 157, 220);
+}

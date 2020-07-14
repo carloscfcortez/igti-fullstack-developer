@@ -4,14 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabalho Prático - Modulo 1</title>
-    <link type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="content">
-      <div class="col">
-        <label>(R) Red</label>
-      </div>
-    </div>
+    <div>
+      <section class="container">
+        <h1>Change the Input Range to choose your Color!</h1>
+      </section>
+      <section class="container">
+        <div class="col">
+          <div class="row">
+            <label>(R) Red: </label>
+          </div>
+          <div class="row">
+            <label>(G) Green: </label>
+          </div>
+          <div class="row">
+            <label>(B) Blue: </label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <input type="range" value="77" min="0" max="255" id="txtColorR" />
+          </div>
+          <div class="row">
+            <input type="range" value="146" min="0" max="255"  id="txtColorG" />
+          </div>
+          <div class="row">
+            <input type="range" value="237" min="0" max="255"  id="txtColorB" />
+          </div>
+        </div>
+       
+        <div class="col">
+          <div class="row">
+            <input id="txtResultColorR" type="text" disabled />
+          </div>
+          <div class="row">
+            <input id="txtResultColorG" type="text" disabled />
+          </div>
+          <div class="row">
+            <input id="txtResultColorB" type="text" disabled />
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="col">
+          <label>Your Color RGB Here: </label>
+        </div>
+        <div class="col">
+          <div id="dvSquare" class="square"></div>
+        </div>
+      </section>
+    </dic>
   </body>
   <script src="./index.js"></script>
 </html>
