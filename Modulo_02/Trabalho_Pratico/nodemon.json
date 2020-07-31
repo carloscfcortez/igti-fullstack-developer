@@ -1,0 +1,3 @@
+{
+    "ignore": ["results/**/*.json", "README"]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "trabalho-pratico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-flow": "^7.10.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
