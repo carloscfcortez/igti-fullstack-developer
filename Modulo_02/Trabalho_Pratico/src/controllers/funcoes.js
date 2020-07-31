@@ -185,9 +185,12 @@ class FuncoesController {
             const { ShortName, Cities } = newArray[i];
 
             const cityOfBigName = Cities.sort((a, b) => {
-                return b.Length - a.Length;
-            }).splice(0, 1)[0];
-            //console.log(cityOfBigName);
+                if (a.Length === b.Length) {
+                    return a.Name - b.Name;
+                }
+                return a.Length - b.Length;
+            })[0];
+
             citiesLength.push({
                 Name: cityOfBigName.Name,
                 Length: cityOfBigName.Length,
@@ -195,7 +198,26 @@ class FuncoesController {
             });
         }
 
+        var x = citiesLength.sort((a, b) => {
+            if (a.Length > b.Length || a.Length < b.Length)
+                return a.Length - b.Length;
+
+            return ("" + a.Name).localeCompare(b.Name);
+        });
+
+        console.log("cities:", x);
+
+        // console.log(
+        //     citiesLength.sort((a, b) => {
+        //         return a.Name < b.Name;
+        //         //if (a.Length === b.Length) return a.Name - b.Name;
+
+        //         //return a.Length - b.Length;
+        //     })
+        // );
         const result = citiesLength.sort((a, b) => {
+            if (a.Length === b.Length) return a.Name - b.Name;
+
             return a.Length - b.Length;
         })[0];
 
