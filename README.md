@@ -12,8 +12,11 @@
 # Modulo 2
 
 ## Trabalho Prático
+[Show Code](https://github.com/carloscfcortez/igti-fullstack-developer/tree/master/Modulo_02/Trabalho_Pratico)
+
 - Nodejs
 - Babel
 - Nodemon
 
 ## Desafio
+[Show Code](https://github.com/carloscfcortez/igti-fullstack-developer/tree/master/Modulo_02/Desafio)
