@@ -1,3 +1,4 @@
 {
-  "ignore": ["README"]
+  "ignore": ["README",  "./src/database/grades.json"]
 }
+  
