@@ -8,7 +8,7 @@ export default function NavHeader() {
       brand={
         <div style={{ paddingLeft: 10 }}>
           <Icon>account_balance</Icon>
-          <span>Teste</span>
+          <span>React - Juros Compostos</span>
         </div>
       }
       id="mobile-nav"
@@ -25,8 +25,8 @@ export default function NavHeader() {
         preventScrolling: true,
       }}
     >
-      <NavItem href="">Getting started</NavItem>
-      <NavItem href="components.html">Components</NavItem>
+      <NavItem href="https://github.com/carloscfcortez">Github</NavItem>
+      {/* <NavItem href="components.html">Components</NavItem> */}
     </Navbar>
   );
 }
