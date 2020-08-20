@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Navbar, Icon, NavItem, Button } from "react-materialize";
+import { Navbar, Icon, NavItem } from "react-materialize";
 import SideNavComponent from "./SideNavComponent";
 export default function NavHeaderComponent() {
   return (

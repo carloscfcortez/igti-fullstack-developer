@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Button, SideNav, SideNavItem, Icon } from "react-materialize";
+import React from "react";
+import { SideNav, SideNavItem, Icon } from "react-materialize";
 export default function SideNavComponent(props) {
   return (
     <div>
@@ -26,10 +26,13 @@ export default function SideNavComponent(props) {
           }}
           userView
         />
+        <SideNavItem href="/" icon={<Icon>home</Icon>}>
+          Home
+        </SideNavItem>
         <SideNavItem subheader>Modulo 3</SideNavItem>
         <SideNavItem divider={true}></SideNavItem>
 
-        <SideNavItem href="#!icon" icon={<Icon>calculate</Icon>}>
+        <SideNavItem href="/desafio" icon={<Icon>calculate</Icon>}>
           Desafio
         </SideNavItem>
         {/* <SideNavItem href="#!second">Second Link</SideNavItem>
