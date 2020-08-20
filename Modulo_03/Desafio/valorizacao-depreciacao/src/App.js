@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
-import NavHeader from "./components/NavHeader";
+import NavHeaderComponent from "./components/NavHeaderComponent";
 import { Card, Col, Container, Row, TextInput } from "react-materialize";
+import SideNavComponent from "./components/SideNavComponent";
 
 function App() {
   const [valueInit, setValueInit] = useState(5900);
@@ -33,7 +34,8 @@ function App() {
   };
   return (
     <Fragment>
-      <NavHeader />
+      <NavHeaderComponent />
+
       <Container className="fluid" style={{ flex: 1 }}>
         <Row>
           <Col>
