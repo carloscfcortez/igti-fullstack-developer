@@ -16,10 +16,12 @@ const AccountSchema = new mongoose.Schema({
   },
   balance: {
     type: Number,
-    default: 0
+    default: 0,
+    required: true,
+    min: 0
   }
 });
 
-const Account = mongoose.model('account', AccountSchema);
+const Account = mongoose.model('account', AccountSchema, 'account');
 
 export default Account;

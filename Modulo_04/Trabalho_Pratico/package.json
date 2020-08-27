@@ -1,5 +1,5 @@
 {
-  "name": "Trabalho_Pratico",
+  "name": "my-bank-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec babel-node index.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
